@@ -1,0 +1,37 @@
+@import url(reset.css);
+
+body {
+
+}
+
+header {
+    background: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#HeaderLogo {
+    width: 92px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+ul li a:hover {
+    color: red;
+    background: rgba(red, green, blue, 0,201);
+}
+
+ul li a {
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.menuSelect {
+    color: #73cdf6;
+}

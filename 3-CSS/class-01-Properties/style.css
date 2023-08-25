@@ -1,0 +1,22 @@
+h1 {
+    color: orange;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'Press Start 2P',
+cursive;
+}
+
+h2 {
+    color: #e5db08;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Roboto',
+    sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    line-height: 24px;
+
+}
