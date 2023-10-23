@@ -38,3 +38,4 @@ const calculateAreas = rectangles.map((value, index) =>{
 
 console.table(calculateAreas);
 document.write(JSON.stringify(calculateAreas))
+
