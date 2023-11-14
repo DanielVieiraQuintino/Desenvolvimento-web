@@ -1,0 +1,11 @@
+// ES6 Modules
+
+import { sumNumbers, mathOperations } from "./mathFunctions.js";
+
+console.log(sumNumbers(2, 3));
+console.log(mathOperations.mul(2, 3));
+console.log(mathOperations.div(2, 3));
+console.log(mathOperations.mul(2, 3));
+console.log(person("Neemias", 17).status());
+
+console.log(this);
