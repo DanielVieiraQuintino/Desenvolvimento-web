@@ -1,4 +1,5 @@
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
+import { UserCard } from "./components/UserCard";
 
 type UserData = {
   name: string;
@@ -15,15 +16,16 @@ export function App() {
   function addCount() {
     // Closures
     // setCount((prevState) => prevState + 1);
-    setCount(count + 1);
+    setCount((prevState) => prevState + 1);
   }
 
   function handleChangeName(event: ChangeEvent<HTMLInputElement>) {
+    setName(event?.target.value);
     console.log(event?.target.value);
   }
 
-  function handleSubmit(event: FormEvent) {
-    event.preventDefault();
+  function handleSubmit() {
+    event?.preventDefault();
     setAuxName(name);
   }
 
@@ -48,14 +50,7 @@ export function App() {
         <input type="text" onChange={handleChangeName} />
         <button>Pesquisar</button>
       </form>
-      {data && (
-        <section>
-          <h2>{data.name}</h2>
-          <img src={data.avatar_url} alt="" />
-          <p>{data.bio}</p>
-        </section>
-      )}
-      ;
+      {data && <UserCard name={data.name} avatar_url={data.avatar_url} bio={data.bio} />};
     </>
   );
 }
